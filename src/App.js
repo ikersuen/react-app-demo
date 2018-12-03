@@ -4,11 +4,11 @@ import './App.css';
 
 class App extends Component {
   state = {number: 0}
-  alert = () => {alert("now you know how to handle onclick event")}
+  upadteStateNumber = () => { this.setState({number: 1}) }
   render() {
     return (
       <div>
-        <button onClick={this.alert}>Hello world!</button>number: {this.state.number}
+        <button onClick= {this.upadteStateNumber}>Hello world!</button>number: {this.state.number}
       </div>
     );
   }
