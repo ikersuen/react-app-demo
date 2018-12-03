@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button onClick= {this.upadteStateNumber}>Hello world!</button>number: {this.state.number}
+        <button onClick= {this.upadteStateNumber}>Hello world!</button>number: {this.props.defaultNumber}
       </div>
     );
   }
