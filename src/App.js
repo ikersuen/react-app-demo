@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Number from './components/Number.js'; 
 import './App.css';
 
 class App extends Component {
@@ -8,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button onClick= {this.upadteStateNumber}>Hello world!</button>number: {this.state.number}
+        <button onClick= {this.upadteStateNumber}>Hello world!</button><Number /> {this.state.number}
       </div>
     );
   }
